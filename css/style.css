@@ -1,0 +1,48 @@
+/*Reseting globla style*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); }
+
+.sidebar {
+  background-color: #EFF0F4; }
+
+.header {
+  background-color: #263755; }
+
+.realtors {
+  background-color: #F03A52; }
+
+.features {
+  background-color: #EFF0F4; }
+
+.story__pictures {
+  background-color: #263755; }
+
+.story__content {
+  background-color: #F03A52; }
+
+.homes {
+  background-color: #EFF0F4; }
+
+.gallery {
+  background-color: #EFF0F4; }
+
+.footer {
+  background-color: #EFF0F4; }
