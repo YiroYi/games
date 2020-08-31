@@ -18,7 +18,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 90vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
@@ -60,6 +60,20 @@ body {
   .btn:hover {
     background-color: #f7556b; }
 
+.btn-intro {
+  background-color: #0f03a5;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn-intro:hover {
+    background-color: #f7556b; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -75,15 +89,40 @@ body {
 .sidebar {
   background-color: #F03A52;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem; }
+  .nav-btn::before, .nav-btn::after {
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    content: "";
+    display: block; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.3rem); }
 
 .header {
   background-color: #EFF0F4;
-  grid-column: full-start / col-end 6; }
-
-.realtors {
-  background-color: #263755;
-  grid-column: col-start 7 / full-end; }
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba(239, 240, 244, 0.5), rgba(239, 240, 244, 0.5)), url(../img/finald.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: minmax(min-content, 30vw) 1fr; }
+  .header__content {
+    display: grid;
+    align-content: center;
+    justify-items: start; }
 
 .features {
   grid-column: center-start / center-end;

@@ -1,4 +1,18 @@
 .header {
   background-color: $color-primary;
-  grid-column: full-start / col-end 6;
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/finald.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 30vw) 1fr;
+
+  &__content {
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
 }
+
+
