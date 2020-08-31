@@ -1,4 +1,29 @@
 .footer {
-  background-color: $color-primary;
+  background-color: $color-primary-dark;
   grid-column: full-start / full-end;
+  padding: 8rem;
+
+  &__link {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: $font-display;
+    text-transform: uppercase;
+    margin-top: 6rem;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  &__item {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
